@@ -21,12 +21,10 @@ const CatsBlok = () => {
   }, [id]);
 
   return (
-    <div className="">
-      <div className="">
-        {" "}
-        {cats &&
-          cats.map((item, index) => <CatsCard key={index} cat={item} />)}{" "}
-      </div>{" "}
+    <div>
+      <div>
+        {cats && cats.map((item, index) => <CatsCard key={index} cat={item} />)}
+      </div>
     </div>
   );
 };

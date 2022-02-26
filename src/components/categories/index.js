@@ -14,20 +14,20 @@ const Categories = () => {
   });
 
   return (
-    <div className="">
-      <Link to={"/"} className="">
-        <div className="">
-          <label className=""> random </label>{" "}
-        </div>{" "}
-      </Link>{" "}
+    <div>
+      <Link to={"/"}>
+        <div>
+          <label> random </label>
+        </div>
+      </Link>
       {categories &&
         categories.map((item) => (
-          <Link to={"/categories/" + item.id} key={item.id} className="">
-            <div className="">
-              <label className=""> {item.name} </label>{" "}
-            </div>{" "}
+          <Link to={"/categories/" + item.id} key={item.id}>
+            <div>
+              <label> {item.name} </label>
+            </div>
           </Link>
-        ))}{" "}
+        ))}
     </div>
   );
 };
