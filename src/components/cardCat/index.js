@@ -1,12 +1,13 @@
 import React from "react";
+import "./style.css";
 
 const CatsCard = ({ cat }) => {
   return (
-    <div>
-      <div>
-        <img src={cat.url} alt="img" width="300px" />
-      </div>{" "}
+    // <div>
+    <div className="images">
+      <img src={cat.url} alt="img" width="300px" />
     </div>
+    // </div>
   );
 };
 

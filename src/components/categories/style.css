@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    padding: 10px;
+}
+
+.random {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #41ca46;
+    margin: 10px;
+}
+
+.categories {
+    background-color: white;
+    color: black;
+    border: 2px solid #41ca46;
+    cursor: pointer;
+    margin: 10px;
+}
