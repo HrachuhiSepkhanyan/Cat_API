@@ -17,9 +17,7 @@ const Categories = () => {
     <div className="data_box">
       <Link to={"/"} className="taskByData">
         <div className="tab">
-          <label className="tab-label" htmlFor="rd1">
-            random{" "}
-          </label>{" "}
+          <label className="tab-label">random </label>{" "}
         </div>{" "}
       </Link>{" "}
       {categories &&
@@ -30,10 +28,7 @@ const Categories = () => {
             className="taskByData"
           >
             <div className="tab">
-              <label className="tab-label" htmlFor="rd1">
-                {" "}
-                {item.name}{" "}
-              </label>{" "}
+              <label className="tab-label"> {item.name} </label>{" "}
             </div>{" "}
           </Link>
         ))}{" "}

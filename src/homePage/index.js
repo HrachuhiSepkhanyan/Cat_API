@@ -5,7 +5,7 @@ import CatsBlok from "../components/cats";
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <Categories />
       <CatsBlok />
     </div>
