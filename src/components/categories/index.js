@@ -3,37 +3,42 @@ import { Link } from "react-router-dom";
 import { getCategories } from "../../api/cat_API";
 
 const Categories = () => {
-  const [categories, setCategories] = useState(null);
+    const [categories, setCategories] = useState(null);
 
-  useEffect(() => {
-    if (categories === null) {
-      getCategories().then((r) => {
-        setCategories(r.data);
-      });
-    }
-  });
+    useEffect(() => {
+        if (categories === null) {
+            getCategories().then((r) => {
+                setCategories(r.data);
+            });
+        }
+    });
 
-  return (
-    <div className="data_box">
-      <Link to={"/"} className="taskByData">
-        <div className="tab">
-          <label className="tab-label">random </label>{" "}
-        </div>{" "}
-      </Link>{" "}
-      {categories &&
-        categories.map((item) => (
-          <Link
-            to={"/categories/" + item.id}
-            key={item.id}
-            className="taskByData"
-          >
-            <div className="tab">
-              <label className="tab-label"> {item.name} </label>{" "}
-            </div>{" "}
-          </Link>
-        ))}{" "}
-    </div>
-  );
+    return ( <
+        div className = "" >
+        <
+        Link to = { "/" }
+        className = "" >
+        <
+        div className = "" >
+        <
+        label className = "" > random < /label>{" "} <
+        /div>{" "} <
+        /Link>{" "} {
+            categories &&
+                categories.map((item) => ( <
+                    Link to = { "/categories/" + item.id }
+                    key = { item.id }
+                    className = "" >
+                    <
+                    div className = "" >
+                    <
+                    label className = "" > { item.name } < /label>{" "} <
+                    /div>{" "} <
+                    /Link>
+                ))
+        } { " " } <
+        /div>
+    );
 };
 
 export default Categories;
