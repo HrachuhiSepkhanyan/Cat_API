@@ -5,7 +5,7 @@ const CatsCard = ({ cat }) => {
     <div>
       <div>
         <img src={cat.url} alt="img" width="300px" padding="20px" />
-      </div>{" "}
+      </div>
     </div>
   );
 };
