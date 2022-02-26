@@ -21,8 +21,8 @@ const CatsBlok = () => {
   }, [id]);
 
   return (
-    <div className="catsBlok">
-      <div className="list-filter-container">
+    <div className="">
+      <div className="">
         {" "}
         {cats &&
           cats.map((item, index) => <CatsCard key={index} cat={item} />)}{" "}
